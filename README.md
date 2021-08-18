@@ -1,4 +1,9 @@
 # Restful
+存在问题
+Order By还没考虑全
+目前只能基于内网使用，存在安全风险，需要继续添加权限控制
+有兴趣继续完善的+QQ:2922340119
+
 基于NetCore+SqlSugar+Redis/MemeoryCache通用的数据库单表视图增删改查，目前支持Oracle、SQLServer、MySQL、Sqlite、PostgreSQL,可以自由构建其他数据库操作，前台只需要安装响应的参数组装JSON格式
 详细请查看代码里面的注解
 
@@ -79,3 +84,4 @@ SELECT C1,C2,C3,C4,C5  FROM A WHERE 1=1  AND C1 IN (@C10)  AND (   (  C9 >= @C91
 存在问题
 Order By还没考虑全
 目前只能基于内网使用，存在安全风险，需要继续添加权限控制
+有兴趣继续完善的+QQ:2922340119
