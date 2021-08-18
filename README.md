@@ -2,7 +2,15 @@
 存在问题
 Order By还没考虑全
 权限控制
+大家使用的时候请谨慎考虑
 有兴趣可以与作者以前继续完善的
+
+设计这个的初衷是因为当时为了前段Vue项目报表查询，因为设计到非常多的字段，所以当时设计了一个通用的Vue查询组件，该组件会生成对应条件的JSON字符串，因为项目是用的Springboot，后台采用Mybatis去操作条件，如果条件继续增加或是修改将导致后台每次要同步去更新发版，所以考虑设计一个通用的前段表单设计，后台根据前端的JSON条件自己拼接生产SQL，目前Java后台采用的是拼SQL的形式，存在一定的注入风险，后续将会把Java的重新改造。
+所以.Net版本采用了变量形式防止注入
+
+有兴趣的可以查看Vue的通用查询表单 
+地址 
+https://www.npmjs.com/package/quick-query-form
 
 基于NetCore+SqlSugar+Redis/MemeoryCache通用的数据库单表视图增删改查，目前支持Oracle、SQLServer、MySQL、Sqlite、PostgreSQL,可以自由构建其他数据库操作，前台只需要安装响应的参数组装JSON格式
 详细请查看代码里面的注解
@@ -86,7 +94,9 @@ SELECT C1,C2,C3,C4,C5  FROM A WHERE 1=1  AND C1 IN (@C10)  AND (   (  C9 >= @C91
 
  
 
+
 存在问题
 Order By还没考虑全
 权限控制
+大家使用的时候请谨慎考虑
 有兴趣可以与作者以前继续完善的
