@@ -2,6 +2,10 @@
 
 有兴趣可以与作者一起继续完善的加QQ群：590691546
 
+也可访问我的个人博客
+
+https://share.22studio.cn/
+
 设计这个的初衷是因为当时为了前段Vue项目报表查询，因为设计到非常多的字段，所以当时设计了一个通用的Vue查询组件，该组件会生成对应条件的JSON字符串，因为项目是用的Springboot，后台采用Mybatis去操作条件，如果条件继续增加或是修改将导致后台每次要同步去更新发版，所以考虑设计一个通用的前段表单设计，后台根据前端的JSON条件自己拼接生产SQL，目前Java后台采用的是拼SQL的形式，存在一定的注入风险，后续将会把Java的重新改造。
 所以.Net版本采用了变量形式防止注入
 
@@ -90,7 +94,9 @@ SELECT C1,C2,C3,C4,C5  FROM A WHERE 1=1  AND C1 IN (@C10)  AND (   (  C9 >= @C91
  DELETE FROM A WHERE 1=1  AND C1 IN (@C10)  AND (  C9 > @C91 Or C9 < @C92   ) 
 
  
+也可访问我的个人博客
 
+https://share.22studio.cn/
 
 有兴趣可以与作者一起继续完善的加QQ群：590691546
 ![image](https://github.com/curisegong/Restful/blob/master/123123123123131.png)
